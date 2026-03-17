@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio GG | News</title>
+  <meta name="description" content="Studio GGのお知らせ一覧ページです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Urbanist:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/StudioGG_Logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Studio GG トップへ">
+        <img class="brand-logo" src="assets/StudioGG_Logo.png" alt="StudioGG logo">
+        <span class="brand-name">Studio GG</span>
+      </a>
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <a href="games.html">Games</a>
+        <a href="about.html">About</a>
+        <a href="https://note.com/studiogg" target="_blank" rel="noreferrer">Column</a>
+        <a href="about.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="games-hero">
+      <div>
+        <p class="section-label">News</p>
+        <h1>Studio GGのお知らせ</h1>
+        <p class="hero-text">最新情報や更新履歴を一覧で掲載しています。</p>
+      </div>
+    </section>
+
+    <section class="news-strip" aria-labelledby="all-news-heading">
+      <div class="news-strip-head">
+        <p class="section-label">All News</p>
+        <h2 id="all-news-heading">ニュース一覧</h2>
+      </div>
+      <div id="news-content" class="news-strip-content" data-mode="all">
+        <article class="featured-news">
+          <p>ニュースを読み込み中です...</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p class="footer-links">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="eula.html">利用規約</a>
+        <a href="support.html">サポート</a>
+      </p>
+      <p>Copyright (C) Studio GG 2013-2026 All Rights Reserved.</p>
+    </footer>
+  </main>
+
+  <script src="news.js"></script>
+</body>
+</html>

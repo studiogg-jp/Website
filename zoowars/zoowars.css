@@ -1,0 +1,203 @@
+:root {
+  --zw-bg: #f5f2ea;
+  --zw-panel: rgba(255, 255, 255, 0.88);
+  --zw-line: rgba(23, 23, 23, 0.08);
+  --zw-text: #171717;
+  --zw-muted: #66666f;
+  --zw-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.7), transparent 22%),
+    linear-gradient(180deg, #faf8f1 0%, var(--zw-bg) 100%);
+  color: var(--zw-text);
+}
+
+.zoowars-main {
+  padding: 28px 0 48px;
+}
+
+.zoowars-shell,
+.lp-footer {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.zoowars-eyebrow {
+  margin: 0;
+  color: var(--zw-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.zoowars-title {
+  margin: 12px 0 0;
+  line-height: 1.05;
+}
+
+.zoowars-title {
+  font-family: "Urbanist", sans-serif;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  letter-spacing: -0.04em;
+}
+
+.zoowars-movie-frame,
+.zoowars-description {
+  background: var(--zw-panel);
+  border: 1px solid var(--zw-line);
+  border-radius: 30px;
+  box-shadow: var(--zw-shadow);
+}
+
+.zoowars-movie-section,
+.zoowars-links-section,
+.zoowars-description-section {
+  margin-top: 24px;
+}
+
+.zoowars-section-heading {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.zoowars-movie-frame {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.zoowars-movie-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.zoowars-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 14px;
+}
+
+.store-badge-steam-large {
+  width: 178px;
+  height: 56px;
+}
+
+.zoowars-store-coming-soon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.store-badge {
+  display: inline-block;
+  height: 56px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.store-badge-google {
+  width: 188px;
+  background-image: url("../assets/GetItOnGooglePlay_Badge_Web_color_Japanese.svg");
+}
+
+.store-badge-appstore {
+  width: 168px;
+  background-image: url("../assets/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg");
+}
+
+.store-badge-muted {
+  opacity: 0.45;
+  filter: grayscale(0.15);
+}
+
+.store-coming-soon-label {
+  color: #8b8b92;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.zoowars-description {
+  padding: 34px;
+}
+
+.zoowars-description > p,
+.zoowars-feature p {
+  margin: 0;
+  color: var(--zw-muted);
+  line-height: 1.95;
+  font-size: 1rem;
+}
+
+.zoowars-description > p + p {
+  margin-top: 22px;
+}
+
+.zoowars-feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.zoowars-feature {
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(23, 23, 23, 0.06);
+  border-radius: 24px;
+}
+
+.zoowars-feature h3 {
+  margin: 0 0 12px;
+  line-height: 1.4;
+  font-size: 1.06rem;
+}
+
+.zoowars-links-section-bottom {
+  margin-top: 28px;
+}
+
+.lp-footer {
+  padding: 0 0 36px;
+}
+
+.lp-footer p {
+  margin: 0;
+  color: #6a6a6a;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .zoowars-feature-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .zoowars-shell,
+  .lp-footer {
+    width: min(100% - 20px, 1200px);
+  }
+
+  .zoowars-main {
+    padding-top: 20px;
+  }
+
+  .zoowars-description {
+    padding: 22px;
+  }
+
+  .zoowars-feature {
+    padding: 18px;
+  }
+}
