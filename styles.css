@@ -721,6 +721,11 @@ time {
 .legal-content {
   display: grid;
   gap: 22px;
+  min-width: 0;
+}
+
+.legal-block {
+  min-width: 0;
 }
 
 .legal-block h2 {
@@ -733,6 +738,14 @@ time {
   margin: 0;
   color: var(--muted);
   line-height: 1.9;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.legal-block a,
+.legal-list a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .legal-block p + p {
