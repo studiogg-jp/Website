@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">引継ぎ画像プレースホルダー 1</title>
+  <desc id="desc">旧端末の操作画面を差し替えるための仮画像です。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff8ed"/>
+      <stop offset="100%" stop-color="#efe3cf"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect x="120" y="88" width="1040" height="624" rx="36" fill="#fffdf8" stroke="#d9c8ab" stroke-width="6"/>
+  <rect x="180" y="150" width="320" height="46" rx="23" fill="#f4ebdb"/>
+  <rect x="180" y="232" width="920" height="210" rx="24" fill="#f8f1e4" stroke="#e7d7bf" stroke-width="4"/>
+  <rect x="180" y="486" width="430" height="132" rx="24" fill="#f8f1e4" stroke="#e7d7bf" stroke-width="4"/>
+  <rect x="670" y="486" width="430" height="132" rx="24" fill="#f8f1e4" stroke="#e7d7bf" stroke-width="4"/>
+  <text x="640" y="330" text-anchor="middle" font-family="'Zen Kaku Gothic New', sans-serif" font-size="48" font-weight="700" fill="#7c6b52">ここに旧端末の操作画面を配置</text>
+  <text x="640" y="392" text-anchor="middle" font-family="'Zen Kaku Gothic New', sans-serif" font-size="28" fill="#98866e">例: 設定画面 → 引継ぎコード発行</text>
+  <text x="640" y="665" text-anchor="middle" font-family="'Urbanist', sans-serif" font-size="34" font-weight="700" fill="#a08f77">step-01.svg</text>
+</svg>

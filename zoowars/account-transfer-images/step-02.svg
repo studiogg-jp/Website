@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+  <title id="title">引継ぎ画像プレースホルダー 2</title>
+  <desc id="desc">新端末の入力画面を差し替えるための仮画像です。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fdf9ef"/>
+      <stop offset="100%" stop-color="#e7dfc7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect x="120" y="88" width="1040" height="624" rx="36" fill="#fffdfa" stroke="#d2c4a6" stroke-width="6"/>
+  <rect x="210" y="176" width="860" height="70" rx="24" fill="#f5eddf"/>
+  <rect x="210" y="292" width="860" height="88" rx="24" fill="#ffffff" stroke="#dfd1b8" stroke-width="4"/>
+  <rect x="210" y="416" width="860" height="88" rx="24" fill="#ffffff" stroke="#dfd1b8" stroke-width="4"/>
+  <rect x="420" y="564" width="440" height="86" rx="30" fill="#d9c18d"/>
+  <text x="640" y="226" text-anchor="middle" font-family="'Zen Kaku Gothic New', sans-serif" font-size="42" font-weight="700" fill="#78684d">ここに新端末の入力画面を配置</text>
+  <text x="640" y="352" text-anchor="middle" font-family="'Zen Kaku Gothic New', sans-serif" font-size="28" fill="#9a8768">引継ぎコード入力欄</text>
+  <text x="640" y="476" text-anchor="middle" font-family="'Zen Kaku Gothic New', sans-serif" font-size="28" fill="#9a8768">パスワード入力欄</text>
+  <text x="640" y="618" text-anchor="middle" font-family="'Urbanist', sans-serif" font-size="32" font-weight="700" fill="#6a5737">TRANSFER</text>
+</svg>

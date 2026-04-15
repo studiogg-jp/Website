@@ -177,8 +177,142 @@ body {
   text-align: center;
 }
 
+.account-transfer-page {
+  padding: 28px 0 48px;
+}
+
+.account-transfer-hero,
+.account-transfer-section {
+  margin-top: 24px;
+}
+
+.account-transfer-card,
+.account-transfer-step,
+.account-transfer-note,
+.account-transfer-image {
+  background: var(--zw-panel);
+  border: 1px solid var(--zw-line);
+  border-radius: 30px;
+  box-shadow: var(--zw-shadow);
+}
+
+.account-transfer-card {
+  padding: 34px;
+}
+
+.account-transfer-card p,
+.account-transfer-card li,
+.account-transfer-step p,
+.account-transfer-note p,
+.account-transfer-image figcaption {
+  color: var(--zw-muted);
+  line-height: 1.95;
+  font-size: 1rem;
+}
+
+.account-transfer-card p,
+.account-transfer-note p {
+  margin: 0;
+}
+
+.account-transfer-card p + p,
+.account-transfer-note p + p {
+  margin-top: 16px;
+}
+
+.account-transfer-checklist,
+.account-transfer-points {
+  margin: 18px 0 0;
+  padding-left: 1.25rem;
+}
+
+.account-transfer-checklist li + li,
+.account-transfer-points li + li {
+  margin-top: 10px;
+}
+
+.account-transfer-steps {
+  display: grid;
+  gap: 18px;
+}
+
+.account-transfer-step {
+  padding: 24px;
+}
+
+.account-transfer-step h3,
+.account-transfer-note h2 {
+  margin: 0 0 10px;
+  line-height: 1.4;
+  font-size: 1.16rem;
+}
+
+.account-transfer-step p {
+  margin: 0;
+}
+
+.account-transfer-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.account-transfer-block {
+  margin-top: 24px;
+}
+
+.account-transfer-block-head {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.account-transfer-block-head h3 {
+  margin: 10px 0 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.15;
+}
+
+.account-transfer-block-head p {
+  margin: 12px auto 0;
+  max-width: 48rem;
+  color: var(--zw-muted);
+  line-height: 1.9;
+}
+
+.account-transfer-image {
+  margin: 0;
+  overflow: hidden;
+}
+
+.account-transfer-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: rgba(23, 23, 23, 0.06);
+}
+
+.account-transfer-image figcaption {
+  padding: 18px 20px 20px;
+}
+
+.account-transfer-note {
+  padding: 28px 30px;
+}
+
+.account-transfer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
 @media (max-width: 960px) {
   .zoowars-feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .account-transfer-gallery {
     grid-template-columns: 1fr;
   }
 }
@@ -199,5 +333,15 @@ body {
 
   .zoowars-feature {
     padding: 18px;
+  }
+
+  .account-transfer-card,
+  .account-transfer-step,
+  .account-transfer-note {
+    padding: 22px;
+  }
+
+  .account-transfer-image figcaption {
+    padding: 16px 18px 18px;
   }
 }
