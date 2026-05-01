@@ -19,11 +19,15 @@ async function loadNews() {
     const featured = news.featured;
     const items = Array.isArray(news.items) ? news.items.slice(0, listLimit) : [];
 
+    const featuredTitle = featured?.url
+      ? `<a href="${featured.url}">${featured.title}</a>`
+      : featured?.title;
+
     const featuredHtml = featured
       ? `
         <article class="featured-news">
           <time datetime="${featured.date}">${featured.displayDate}</time>
-          <h3>${featured.title}</h3>
+          <h3>${featuredTitle}</h3>
           <p>${featured.body}</p>
         </article>
       `
@@ -37,7 +41,7 @@ async function loadNews() {
               (item) => `
                 <li>
                   <time datetime="${item.date}">${item.displayDate}</time>
-                  <span>${item.text}</span>
+                  <span>${item.url ? `<a href="${item.url}">${item.text}</a>` : item.text}</span>
                 </li>
               `
             )

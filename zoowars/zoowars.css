@@ -45,7 +45,8 @@ body {
 }
 
 .zoowars-movie-frame,
-.zoowars-description {
+.zoowars-description,
+.zoowars-update-card {
   background: var(--zw-panel);
   border: 1px solid var(--zw-line);
   border-radius: 30px;
@@ -54,6 +55,7 @@ body {
 
 .zoowars-movie-section,
 .zoowars-links-section,
+.zoowars-update-section,
 .zoowars-description-section {
   margin-top: 24px;
 }
@@ -126,12 +128,16 @@ body {
   text-transform: uppercase;
 }
 
-.zoowars-description {
+.zoowars-description,
+.zoowars-update-card {
   padding: 34px;
 }
 
 .zoowars-description > p,
-.zoowars-feature p {
+.zoowars-feature p,
+.zoowars-update-card p,
+.balance-update-card p,
+.balance-update-card li {
   margin: 0;
   color: var(--zw-muted);
   line-height: 1.95;
@@ -140,6 +146,168 @@ body {
 
 .zoowars-description > p + p {
   margin-top: 22px;
+}
+
+.zoowars-update-card {
+  text-align: center;
+}
+
+.zoowars-update-card-left {
+  text-align: left;
+}
+
+.zoowars-update-card-left .zoowars-eyebrow {
+  text-align: left;
+}
+
+.zoowars-update-card h2 {
+  margin: 12px 0 0;
+  line-height: 1.25;
+}
+
+.zoowars-update-date {
+  margin-top: 12px;
+  font-weight: 700;
+}
+
+.zoowars-update-card .zoowars-update-actions {
+  margin-top: 20px;
+}
+
+.zoowars-update-summary,
+.zoowars-update-list {
+  margin: 16px 0 0;
+  padding-left: 1.25rem;
+}
+
+.zoowars-update-summary li,
+.zoowars-update-list li {
+  color: var(--zw-muted);
+  line-height: 1.9;
+}
+
+.zoowars-update-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.zoowars-update-list li {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--zw-line);
+}
+
+.zoowars-update-list li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.zoowars-update-list time {
+  font-weight: 700;
+  color: var(--zw-text);
+}
+
+.zoowars-update-detail {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--zw-line);
+}
+
+.zoowars-update-detail h3 {
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+.zoowars-update-detail h4 {
+  margin: 20px 0 8px;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.zoowars-update-detail ul {
+  margin: 12px 0 0;
+  padding-left: 1.25rem;
+}
+
+.zoowars-update-detail li,
+.zoowars-past-updates p {
+  color: var(--zw-muted);
+  line-height: 1.9;
+}
+
+.zoowars-past-updates summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.zoowars-past-updates p {
+  margin: 14px 0 0;
+}
+
+.zoowars-past-updates time {
+  color: var(--zw-muted);
+  font-size: 0.95rem;
+}
+
+.zoowars-past-update-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.zoowars-past-update-body {
+  margin-top: 16px;
+}
+
+.zoowars-past-update-body .zoowars-update-card {
+  box-shadow: none;
+}
+
+.balance-update-card {
+  background: var(--zw-panel);
+  border: 1px solid var(--zw-line);
+  border-radius: 30px;
+  box-shadow: var(--zw-shadow);
+  padding: 34px;
+}
+
+.balance-update-card section + section {
+  margin-top: 30px;
+  padding-top: 28px;
+  border-top: 1px solid var(--zw-line);
+}
+
+.balance-update-card h2 {
+  margin: 0 0 12px;
+  line-height: 1.35;
+}
+
+.balance-update-card h3 {
+  margin: 22px 0 8px;
+  line-height: 1.4;
+}
+
+.balance-update-card ul {
+  margin: 12px 0 0;
+  padding-left: 1.25rem;
+}
+
+.balance-update-meta {
+  margin-top: 14px;
+}
+
+.balance-update-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
 }
 
 .zoowars-feature-list {
@@ -327,7 +495,9 @@ body {
     padding-top: 20px;
   }
 
-  .zoowars-description {
+  .zoowars-description,
+  .zoowars-update-card,
+  .balance-update-card {
     padding: 22px;
   }
 
