@@ -84,6 +84,56 @@ body {
   gap: 14px;
 }
 
+.zoowars-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.zoowars-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(23, 23, 23, 0.12);
+  border-radius: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 10px 24px rgba(15, 15, 18, 0.12);
+  transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
+}
+
+.zoowars-social-link:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 14px 30px rgba(15, 15, 18, 0.16);
+}
+
+.zoowars-social-link img {
+  display: block;
+  max-width: 30px;
+  max-height: 30px;
+  object-fit: contain;
+}
+
+.zoowars-social-discord img {
+  max-width: 36px;
+}
+
+.zoowars-social-x {
+  background: #111114;
+}
+
+.zoowars-social-discord {
+  background: #5865f2;
+}
+
 .store-badge-steam-large {
   width: 178px;
   height: 56px;
@@ -503,6 +553,15 @@ body {
 
   .zoowars-feature {
     padding: 18px;
+  }
+
+  .zoowars-links {
+    gap: 10px;
+  }
+
+  .zoowars-social-link {
+    width: 54px;
+    height: 54px;
   }
 
   .account-transfer-card,
