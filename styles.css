@@ -831,6 +831,7 @@ time {
 .visual-zoowars-cardgame,
 .visual-dangerous-mining,
 .visual-terrible-monster,
+.visual-cloverland-with-brownies,
 .visual-littletownbuilders,
 .visual-harapeko-bahamuto,
 .visual-tenohira-dungeon,
@@ -856,6 +857,10 @@ time {
 
 .visual-terrible-monster {
   background-image: url("games/terrible_monster.jpg");
+}
+
+.visual-cloverland-with-brownies {
+  background-image: url("games/cloverland_with_brownies.jpg");
 }
 
 .visual-littletownbuilders {
