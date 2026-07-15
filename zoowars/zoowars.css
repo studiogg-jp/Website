@@ -165,6 +165,18 @@ body {
   background-image: url("../assets/Download_on_the_App_Store_Badge_JP_RGB_blk_100317.svg");
 }
 
+.zoowars-page-en .store-badge-steam {
+  background-image: url("../assets/steam_button_en.svg");
+}
+
+.zoowars-page-en .store-badge-google {
+  background-image: url("../assets/GetItOnGooglePlay_Badge_Web_color_English.svg");
+}
+
+.zoowars-page-en .store-badge-appstore {
+  background-image: url("../assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg");
+}
+
 .store-badge-muted {
   opacity: 0.45;
   filter: grayscale(0.15);
